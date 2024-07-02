@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background: #1a1a1a;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: 0;
+}
+
+.form_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.2), rgba(0,0,0,0.9));
+}
+
+.form_wrap h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
+.form_wrap input {
+    width: 100%;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s, border 0.3s;
+    box-shadow: 0 0 15px rgba(0,255,255,0.4), inset 0 0 5px rgba(0,255,255,0.5);
+}
+
+.form_wrap input:hover, .form_wrap input:focus {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 0 15px rgba(0,255,255,0.6), inset 0 0 5px rgba(0,255,255,0.7);
+}
+
+.form_wrap button {
+    width: 100%;
+    height: 40px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border: 1px solid #00f5ff;
+    background: linear-gradient(45deg, #00f5ff, #009dff);
+    cursor: pointer;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px rgba(0,255,255,0.4);
+}
+
+.form_wrap button:hover {
+    background: linear-gradient(45deg, #009dff, #00f5ff);
+    box-shadow: 0 0 20px rgba(0,255,255,0.6);
+}
